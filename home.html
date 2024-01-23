@@ -1,0 +1,77 @@
+<html>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            </head>
+    
+    
+    <body>
+        <div>
+            <h1>CBDeez</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Products</a>
+                    </li>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="map">
+
+        </div>
+        <div>
+          <button id="button">button</button>
+          <script>
+            $(document).ready(
+                $("#button").click(function(){
+                // console.log("clicked")
+                var card=[
+    {name:"OG", type:"indica", description:"earthy put a nigga to sleep", price:23.99, size:3.5},
+    {name:"OG", type:"indica", description:"earthy put a nigga to sleep", price:23.99, size:3.5},
+]
+
+
+            var b = jQuery.map(card, function(n, i){
+                console.log(card)
+
+                
+                $("#map").html(b)
+
+            })
+            })
+            )
+
+           
+          </script>
+        </div>
+        <script>
+            
+card.map((c)=>(
+    
+    <div>
+        <h1>{c.name}</h1>
+        <h3>{c.type}</h3>
+        <h3>{c.description}</h3>
+        <h3>{c.price}</h3>
+        <h3>{c.type}</h3>
+        <h3>{c.size}</h3>
+
+
+
+
+    </div>
+    
+
+))
+console.log(card)
+        </script>
+    </body>
+</html>
