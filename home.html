@@ -1,14 +1,15 @@
 <html>
         <head>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="styles.css"></link>
             </head>
     
     
     <body>
-        <div>
-            <h1>CBDeez</h1>
-            <nav>
-                <ul>
+        <div >
+            
+            <nav >
+                <ul class="navbar">
                     <li>
                         <a href="/home">Home</a>
                     </li>
@@ -24,7 +25,20 @@
                 </ul>
             </nav>
         </div>
+                    <h1>CBDeez Corp.</h1>
+
+        <div >
+           <h2>New </h2> 
+           <p>dsdsds</p>
+
+        </div>
+        <div>
+            <h2>Most Popular</h2>
+            <p>dsdsds</p>
+
+        </div>
         <div id="map">
+            
 
         </div>
         <div>
@@ -39,11 +53,11 @@
 ]
 
 
-            var b = jQuery.map(card, function(n, i){
-                console.log(card)
+            $.map(card, function(n, i){
+                console.log(n)
 
                 
-                $("#map").html(b)
+                $("#map").html(n)
 
             })
             })
@@ -73,5 +87,6 @@ card.map((c)=>(
 ))
 console.log(card)
         </script>
+        <script src="/home.js"></script>
     </body>
 </html>
